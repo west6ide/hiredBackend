@@ -4,7 +4,6 @@ from schemas import CourseCreate, CourseUpdate, CourseRead, LessonCreate, Lesson
 from models import Course, Lesson
 from settings import get_db
 
-# Course and Lesson routers with unique prefixes and tags
 course_router = APIRouter(prefix="/courses", tags=["Courses"])
 lesson_router = APIRouter(prefix="/courses/{course_id}/lessons", tags=["Lessons"])
 
